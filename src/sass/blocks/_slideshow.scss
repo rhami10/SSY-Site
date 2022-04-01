@@ -57,10 +57,6 @@
             .tile__content {
                 color: var(--color-text#{$i});
             }
-
-            @include minw($bp-tablet) {
-                transform: translateY(#{8vh * $offset});
-            }
         }
     }
 
