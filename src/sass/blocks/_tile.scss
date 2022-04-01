@@ -52,6 +52,8 @@
 .tile__title {
     margin-left: -10%;
 
+    line-height: 1.2;
+
     white-space: nowrap;
 
     @include minw($bp-mobile) {
@@ -60,13 +62,18 @@
 }
 
 .tile__cta {
+    font-family: 'Roboto Mono', monospace;
     display: block;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-left: 6.4%;
 
     line-height: 1.5;
 
+    font-size: calc(0.3rem + 1.5vw);
+
     @include minw($bp-mobile) {
         margin-left: -11%;
+        margin-bottom: 1.5rem;
+        font-size: calc(1rem + 1.5vw);
     }
 }

@@ -161,13 +161,8 @@ a:focus {
 
 
 .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     position: relative;
     width: 100%;
-    height: calc(100vh - 32rem);
 }
 
 @media screen and (min-width: 53em) {
@@ -221,9 +216,5 @@ a:focus {
     }
     .frame a {
         pointer-events: auto;
-    }
-    .content {
-        height: 100vh;
-        justify-content: center;
     }
 }
