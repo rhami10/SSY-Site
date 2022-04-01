@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="dist/app.css" />
+    <style>
+        @font-face {
+            font-family: "Lulo Clean";
+            src:url("dist/fonts/lulo_clean.otf");
+        }
+    </style>
     <script>
         document.documentElement.className = "js";
         var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -25,7 +31,7 @@
                                     <img id="tileImage" src="" data-hover="" alt="" class="tile__img">
                                 </figure>
                                 <div class="tile__content">
-                                    <h2 id="tileTitle1" class="tile__title | title title--medium "><span id="tileTitle2" class="title__offset title__offset--small"></span></h2>
+                                    <h2 class="tile__title | title title--medium "></h2>                                    
                                     <div class="tile__cta">
                                         <span class="btn-inline">Apply now</span>
                                     </div>

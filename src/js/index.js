@@ -4,10 +4,10 @@ import Stage from './Stage'
 const APP = window.APP || {}
 
 const camp_det = [
-    {name: "savio", title: "SSY Savio ", title_2: "Sports Camp", images: ["https://static.wixstatic.com/media/f07703_f8ab5d641e0448fe903d717e1a3e7f6f~mv2.jpg", "https://static.wixstatic.com/media/f07703_2abced15466f4e0382cd02eb98d0b633~mv2.jpg"]},
-    {name: "bosco", title: "SSY Bosco ", title_2: "Sports Camp", images: ["", ""]},
-    {name: "creative", title: "SSY Creative ", title_2: "Arts Camp", images: ["", ""]},
-    {name: "adventure", title: "SSY Adventure ", title_2: "Camp", images: ["", ""]},
+    {name: "savio", title: "SSY Savio", title_2: "Sports Camp", images: ["https://static.wixstatic.com/media/f07703_f8ab5d641e0448fe903d717e1a3e7f6f~mv2.jpg", "https://static.wixstatic.com/media/f07703_2abced15466f4e0382cd02eb98d0b633~mv2.jpg"]},
+    {name: "bosco", title: "SSY Bosco", title_2: "Sports Camp", images: ["", ""]},
+    {name: "creative", title: "SSY Creative", title_2: "Arts Camp", images: ["", ""]},
+    {name: "adventure", title: "SSY Adventure", title_2: "Camp", images: ["", ""]},
 ]
 
 const initApp = () => {
@@ -18,8 +18,7 @@ const initApp = () => {
 
     var camp_det_index = camp_det.findIndex((el) => el.name == camp_type);
 
-    document.getElementById("tileTitle1").innerText = camp_det[camp_det_index].title;
-    document.querySelector("#tileTitle2").textContent = camp_det[camp_det_index].title_2;
+    document.querySelector(".tile__title").innerHTML = camp_det[camp_det_index].title + ' <span class="title__offset title__offset--small">' + camp_det[camp_det_index].title_2 + '</span>'
 
     document.getElementById("tileImage").src = camp_det[camp_det_index].images[0];
     document.getElementById("tileImage").setAttribute('data-hover', camp_det[camp_det_index].images[1]);

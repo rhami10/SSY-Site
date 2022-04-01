@@ -333,12 +333,12 @@ body {
   border-bottom: .1rem solid; }
 
 .title {
-  font-family: 'orpheuspro', serif;
+  font-family: 'Lulo Clean', sans-serif;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase; }
   .title--medium {
-    font-size: calc(2rem + 2.5vw); }
+    font-size: calc(0.5rem + 2vw); }
   .title--large {
     font-size: calc(10rem + 3vw); }
 
