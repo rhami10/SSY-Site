@@ -6,8 +6,9 @@ import Scene from './Scene'
 
 export default class Stage {
 
-    constructor() {
+    constructor($shaderType) {
         this.progress = 0
+        this.shaderType = $shaderType
 
         this.$els = {
             scene       : document.getElementById('scene'),
@@ -17,6 +18,6 @@ export default class Stage {
     }
 
     init() {
-        this.scene = new Scene(this.$els.scene)
+        this.scene = new Scene(this.$els.scene, this.shaderType)
     }
 }

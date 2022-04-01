@@ -5,12 +5,6 @@ import { ev } from './utils/utils'
 import trippyShader from '../glsl/trippyShader.glsl'
 import revealShader from '../glsl/revealShader.glsl'
 
-///////////////////////////
-
-const chosenShaderIndex = 0;
-
-///////////////////////////
-
 const perspective = 800
 
 const shaders = [
@@ -25,8 +19,9 @@ const durations = [
 
 export default class Scene {
 
-    constructor($scene) {
+    constructor($scene, $shaderType) {
         this.container = $scene
+        this.shaderType = $shaderType
         this.$tile = document.querySelector('.slideshow-list__el')
 
         this.W = window.innerWidth
@@ -57,7 +52,7 @@ export default class Scene {
         this.renderer.setSize(this.W, this.H)
         this.renderer.setPixelRatio(window.devicePixelRatio)
 
-        this.tile = new Tile(this.$tile, this, durations[chosenShaderIndex], shaders[chosenShaderIndex])
+        this.tile = new Tile(this.$tile, this, durations[this.shaderType], shaders[this.shaderType])
 
         this.update()
     }

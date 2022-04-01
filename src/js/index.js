@@ -15,6 +15,7 @@ const initApp = () => {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const camp_type = urlParams.get('camp');
+    const shader_type = urlParams.get('shader');
 
     var camp_det_index = camp_det.findIndex((el) => el.name == camp_type);
 
@@ -25,7 +26,7 @@ const initApp = () => {
     document.getElementById("tileImage").setAttribute('alt', camp_det[camp_det_index].title.concat(camp_det[camp_det_index].title_2));
 
     window.APP = APP
-    APP.Stage = new Stage()
+    APP.Stage = new Stage(shader_type)
 }
 
 if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
