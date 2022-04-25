@@ -4,7 +4,7 @@ import Stage from './Stage'
 const APP = window.APP || {}
 
 const camp_det = [
-    {name: "savio", title: "SSY Savio", title_2: "Sports Camp", images: ["images/base.jpg", "images/tiles/savio/hover.jpg"]},
+    {name: "savio", title: "SSY Savio", title_2: "Sports Camp", images: [url("/img/tiles/savio/base.jpg"), url("/img/tiles/savio/base.jpg")]},
     {name: "bosco", title: "SSY Bosco", title_2: "Sports Camp", images: ["", ""]},
     {name: "creative", title: "SSY Creative", title_2: "Arts Camp", images: ["", ""]},
     {name: "adventure", title: "SSY Adventure", title_2: "Camp", images: ["", ""]},
