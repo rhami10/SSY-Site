@@ -4,10 +4,10 @@ import Stage from './Stage'
 const APP = window.APP || {}
 
 const camp_det = [
-    {name: "savio", title: "SSY Savio", title_2: "Sports Camp", images: [url("/img/tiles/savio/base.jpg"), url("/img/tiles/savio/base.jpg")]},
-    {name: "bosco", title: "SSY Bosco", title_2: "Sports Camp", images: ["", ""]},
-    {name: "creative", title: "SSY Creative", title_2: "Arts Camp", images: ["", ""]},
-    {name: "adventure", title: "SSY Adventure", title_2: "Camp", images: ["", ""]},
+    {name: "savio", title: "SSY Savio", title_2: "Sports Camp", images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/savio/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/savio/hover.jpg"]},
+    {name: "bosco", title: "SSY Bosco", title_2: "Sports Camp", images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/bosco/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/bosco/hover.jpg"]},
+    {name: "creative", title: "SSY Creative", title_2: "Arts Camp", images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/creative/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/creative/hover.jpg"]},
+    {name: "adventure", title: "SSY Adventure", title_2: "Camp", images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/adventure/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/adventure/hover.jpg"]},
 ]
 
 // const camp_det = [
@@ -31,7 +31,8 @@ const initApp = () => {
     document.getElementById("tileImage").src = camp_det[camp_det_index].images[0];
     document.getElementById("tileImage").setAttribute('data-hover', camp_det[camp_det_index].images[1]);
     document.getElementById("tileImage").setAttribute('alt', camp_det[camp_det_index].title.concat(camp_det[camp_det_index].title_2));
-    document.getElementById
+    
+    document.documentElement.style.setProperty('--color-text', `var(--color-text${camp_det_index+1})`);
 
 
     window.APP = APP

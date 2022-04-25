@@ -111,11 +111,12 @@ select {
   box-sizing: border-box; }
 
 :root {
+  --color-text0: #FFF;
   --color-text1: #deedcf;
   --color-text2: #ffcbcc;
   --color-text3: #b9e6e3;
   --color-text4: #e1d0a1;
-  --color-text: var(--color-text1);
+  --color-text: var(--color-text0);
   --color-bg: rgba(0, 0, 0, 0);
   --color-link: var(--color-text);
   --color-link-hover: #fff;
@@ -444,16 +445,6 @@ body {
   .slideshow-list__el:last-child {
     padding-right: 10vw;
     box-sizing: content-box; }
-  .slideshow-list__el:nth-child(1) .tile__content {
-    color: var(--color-text1); }
-  .slideshow-list__el:nth-child(2) .tile__content {
-    color: var(--color-text2); }
-  .slideshow-list__el:nth-child(3) .tile__content {
-    color: var(--color-text3); }
-  .slideshow-list__el:nth-child(4) .tile__content {
-    color: var(--color-text4); }
-  .slideshow-list__el:nth-child(5) .tile__content {
-    color: var(--color-text5); }
   @media only screen and (min-width: 312px) {
     .slideshow-list__el {
       margin-left: 30vw;

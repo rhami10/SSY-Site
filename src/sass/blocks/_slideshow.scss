@@ -50,15 +50,15 @@
         box-sizing: content-box;
     }
 
-    @for $i from 1 to 6 {
-        $offset: if($i % 2 == 0, -1, 1);
+    // @for $i from 1 to 6 {
+    //     $offset: if($i % 2 == 0, -1, 1);
 
-        &:nth-child(#{$i}) {
-            .tile__content {
-                color: var(--color-text#{$i});
-            }
-        }
-    }
+    //     &:nth-child(#{$i}) {
+    //         .tile__content {
+    //             color: var(--color-text#{$i});
+    //         }
+    //     }
+    // }
 
     @include minw($bp-mobile) {
         margin-left: 30vw;
