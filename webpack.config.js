@@ -76,7 +76,7 @@ module.exports = {
     plugins: [
         new CopyPlugin([
             { from: './src/fonts', to: path.join(finalPath, '/fonts'), force: true },
-            { from: './src/img', to: path.join(finalPath, '/img'), force: true },
+            { from: './src/img', to: path.join(finalPath, '/images'), force: true },
         ]),
         new MiniCssExtractPlugin({
             filename: 'app.css',
