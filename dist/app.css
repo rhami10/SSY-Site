@@ -112,10 +112,10 @@ select {
 
 :root {
   --color-text0: #FFF;
-  --color-text1: #deedcf;
-  --color-text2: #ffcbcc;
-  --color-text3: #b9e6e3;
-  --color-text4: #e1d0a1;
+  --color-text1: #F7F7FF;
+  --color-text2: #FCE3D9;
+  --color-text3: #B1E5F2;
+  --color-text4: #E1D0A1;
   --color-text: var(--color-text0);
   --color-bg: rgba(0, 0, 0, 0);
   --color-link: var(--color-text);
@@ -190,7 +190,7 @@ a {
       display: flex;
       justify-content: space-between;
       align-items: center; } }
-  @media only screen and (max-width: 311px) {
+  @media only screen and (max-width: 9px) {
     .frame {
       flex-direction: column;
       align-items: flex-start; } }
@@ -202,7 +202,7 @@ a {
 
 .frame__links {
   display: flex; }
-  @media only screen and (max-width: 311px) {
+  @media only screen and (max-width: 9px) {
     .frame__links {
       justify-content: center;
       text-decoration: underline; } }
@@ -215,7 +215,7 @@ a {
 
 .frame__demos {
   margin: 1rem 0; }
-  @media only screen and (max-width: 311px) {
+  @media only screen and (max-width: 9px) {
     .frame__demos {
       order: -1;
       margin: 0 0 3rem; } }
@@ -295,7 +295,7 @@ body {
   height: 100%;
   padding: 9rem 5vw 5rem;
   color: #fff; }
-  @media only screen and (max-width: 311px) {
+  @media only screen and (max-width: 9px) {
     .scroll-content, .detail-view__inner {
       padding-top: 0; } }
 
@@ -333,16 +333,16 @@ body {
   text-transform: uppercase; }
   .title--medium {
     font-size: calc(1.4rem + 1.5vw); }
-    @media only screen and (min-width: 312px) {
+    @media only screen and (min-width: 10px) {
       .title--medium {
-        font-size: calc(3.5rem); } }
+        font-size: calc(2.8rem); } }
   .title--large {
     font-size: calc(10rem + 3vw); }
 
 .title__offset {
   display: block;
   margin-left: 15%; }
-  @media only screen and (min-width: 312px) {
+  @media only screen and (min-width: 10px) {
     .title__offset--medium {
       margin-left: 23%; } }
 
@@ -445,10 +445,10 @@ body {
   .slideshow-list__el:last-child {
     padding-right: 10vw;
     box-sizing: content-box; }
-  @media only screen and (min-width: 312px) {
+  @media only screen and (min-width: 10px) {
     .slideshow-list__el {
       margin-left: 30vw;
-      max-width: 70vmin; } }
+      max-width: 65vmin; } }
 
 .tile {
   position: relative; }
@@ -489,7 +489,7 @@ body {
   margin-left: -10%;
   line-height: 1.2;
   white-space: nowrap; }
-  @media only screen and (min-width: 312px) {
+  @media only screen and (min-width: 10px) {
     .tile__title {
       margin-left: -40%; } }
 
@@ -500,7 +500,7 @@ body {
   margin-left: 6.4%;
   line-height: 1.5;
   font-size: calc(0.3rem + 1.5vw); }
-  @media only screen and (min-width: 312px) {
+  @media only screen and (min-width: 10px) {
     .tile__cta {
       margin-left: -11%;
       margin-bottom: 1.5rem;

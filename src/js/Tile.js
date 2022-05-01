@@ -86,8 +86,8 @@ export default class Tile {
 
         // Adjusting Background Colour
         const idx = clamp([...this.$els.el.parentElement.children].indexOf(this.$els.el) + 1, 1, 5)
-        document.documentElement.style.setProperty('--color-bg', `var(--color-bg${idx})`)
-        document.documentElement.style.setProperty('--color-text', `var(--color-text${idx})`)
+        //document.documentElement.style.setProperty('--color-bg', `var(--color-bg${idx})`)
+        //document.documentElement.style.setProperty('--color-text', `var(--color-text${idx})`)
 
 
         if (!this.mesh) return
