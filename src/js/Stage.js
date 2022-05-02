@@ -6,9 +6,10 @@ import Scene from './Scene'
 
 export default class Stage {
 
-    constructor($shaderType) {
+    constructor($shaderType, $hrefLink) {
         this.progress = 0
         this.shaderType = $shaderType
+        this.hrefLink = $hrefLink
 
         this.$els = {
             scene       : document.getElementById('scene'),
@@ -18,6 +19,6 @@ export default class Stage {
     }
 
     init() {
-        this.scene = new Scene(this.$els.scene, this.shaderType)
+        this.scene = new Scene(this.$els.scene, this.shaderType, this.hrefLink)
     }
 }

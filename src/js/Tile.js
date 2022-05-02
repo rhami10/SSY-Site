@@ -8,8 +8,11 @@ import { clamp, getRatio, wrap, ev } from './utils/utils'
 
 export default class Tile {
 
-    constructor($el, scene, duration, fragmentShader) {
+    constructor($el, scene, duration, fragmentShader, hrefLink) {
         this.scene = scene
+
+        this.hrefLink = hrefLink;
+
         this.$els = {
             body: document.body,
             el: $el,
@@ -67,9 +70,11 @@ export default class Tile {
 
         this.hasClicked = true
         
-        ev('toggleDetail', {
-            open: true
-        })
+        window.open(this.hrefLink, '_blank').focus();
+
+        // ev('toggleDetail', {
+        //     open: true
+        // })
 
         // To be run when needing to animate the closing sequence for tiles... reversing toggleDetail operation: Zoom, and perhaps, Close Modal?
         //

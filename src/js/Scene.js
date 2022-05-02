@@ -19,9 +19,10 @@ const durations = [
 
 export default class Scene {
 
-    constructor($scene, $shaderType) {
+    constructor($scene, $shaderType, $hrefLink) {
         this.container = $scene
         this.shaderType = $shaderType
+        this.hrefLink = $hrefLink
         this.$tile = document.querySelector('.slideshow-list__el')
 
         this.W = window.innerWidth
@@ -52,7 +53,7 @@ export default class Scene {
         this.renderer.setSize(this.W, this.H)
         this.renderer.setPixelRatio(window.devicePixelRatio)
 
-        this.tile = new Tile(this.$tile, this, durations[this.shaderType], shaders[this.shaderType])
+        this.tile = new Tile(this.$tile, this, durations[this.shaderType], shaders[this.shaderType], this.hrefLink)
 
         this.update()
     }

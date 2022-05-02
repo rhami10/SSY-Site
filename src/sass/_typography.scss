@@ -25,7 +25,19 @@
 
     &--medium {
         @include minw($bp-mobile) {
-            margin-left: 23%;
+            margin-left: 18%;
+        }
+    }
+
+    &--s {
+        @include minw($bp-mobile) {
+            margin-left: 11.5%;
+        }
+    }
+
+    &--xs {
+        @include minw($bp-mobile) {
+            margin-left: 6%;
         }
     }
 }

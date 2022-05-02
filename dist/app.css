@@ -344,7 +344,13 @@ body {
   margin-left: 15%; }
   @media only screen and (min-width: 10px) {
     .title__offset--medium {
-      margin-left: 23%; } }
+      margin-left: 18%; } }
+  @media only screen and (min-width: 10px) {
+    .title__offset--s {
+      margin-left: 11.5%; } }
+  @media only screen and (min-width: 10px) {
+    .title__offset--xs {
+      margin-left: 6%; } }
 
 @keyframes rotate {
   to {
