@@ -112,10 +112,10 @@ select {
 
 :root {
   --color-text0: #FFF;
-  --color-text1: #F7F7FF;
+  --color-text1: #AAE5EE;
   --color-text2: #FCE3D9;
-  --color-text3: #B1E5F2;
-  --color-text4: #E1D0A1;
+  --color-text3: #FAE9C6;
+  --color-text4: #C4BCDC;
   --color-text: var(--color-text0);
   --color-bg: rgba(0, 0, 0, 0);
   --color-link: var(--color-text);
