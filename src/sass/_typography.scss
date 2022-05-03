@@ -10,7 +10,7 @@
         font-size: calc(1.4rem + 1.5vw);
 
         @include minw($bp-mobile) {
-            font-size: calc(2.8rem);
+            font-size: calc(3.05rem);
         }
     }
 
@@ -25,13 +25,13 @@
 
     &--medium {
         @include minw($bp-mobile) {
-            margin-left: 18%;
+            margin-left: 12%;
         }
     }
 
     &--s {
         @include minw($bp-mobile) {
-            margin-left: 11.5%;
+            margin-left: 9%;
         }
     }
 

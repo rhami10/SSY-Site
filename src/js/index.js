@@ -7,28 +7,28 @@ const camp_det = [
     {
         name: "savio", 
         title: "SSY Savio", title_2: "Sports Camp", 
-        detail: ["Boys (Y7 - Y10"], 
+        detail: ["12th - 15th July"], 
         link: "https://www.saviosalesianyouth.org/applysavio",
         images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/savio/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/savio/hover.jpg"]
     },
     {
         name: "bosco", 
         title: "SSY Bosco", title_2: "Sports Camp",
-        detail: ["Boys (Y6 - Y8)"], 
+        detail: ["26th - 29th July"], 
         link: "https://www.saviosalesianyouth.org/applybosco",
         images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/bosco/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/bosco/hover.jpg"]
     },
     {
         name: "creative", 
         title: "SSY Creative", title_2: "Arts Camp", 
-        detail: ["Boys (Y10 - Y11)", "Girls (Y6 - Y11)"],
+        detail: ["19th - 22nd July"],
         link: "https://www.saviosalesianyouth.org/applycreative",
         images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/creative/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/creative/hover.jpg"]
     },
     {
         name: "adventure", 
         title: "SSY", title_2: "Adventure", title_3: "Camp", 
-        detail: ["Boys & Girls (Y9 - Y11)"],
+        detail: ["5th - 8th July"],
         link: "https://www.saviosalesianyouth.org/applyadventure",
         images: ["https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/adventure/base.jpg", "https://raw.githubusercontent.com/rhami10/SSY-Site/main/img/tiles/adventure/hover.jpg"]
     }
@@ -70,7 +70,8 @@ const initApp = () => {
 
         /* Setting up caption text. */
         document.querySelector(".tile__cta__text").innerHTML = campSelected.detail[0];
-        if(camp_det_index == 2) document.querySelector(".tile__cta").innerHTML += '<span class="btn-inline tile__cta__text">' + campSelected.detail[1] + '</span>';
+        
+        //if(camp_det_index == 2) document.querySelector(".tile__cta").innerHTML += '<span class="btn-inline tile__cta__text">' + campSelected.detail[1] + '</span>';
     
 
         /* Setting text colours. */

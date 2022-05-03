@@ -335,7 +335,7 @@ body {
     font-size: calc(1.4rem + 1.5vw); }
     @media only screen and (min-width: 10px) {
       .title--medium {
-        font-size: calc(2.8rem); } }
+        font-size: calc(3.05rem); } }
   .title--large {
     font-size: calc(10rem + 3vw); }
 
@@ -344,10 +344,10 @@ body {
   margin-left: 15%; }
   @media only screen and (min-width: 10px) {
     .title__offset--medium {
-      margin-left: 18%; } }
+      margin-left: 12%; } }
   @media only screen and (min-width: 10px) {
     .title__offset--s {
-      margin-left: 11.5%; } }
+      margin-left: 9%; } }
   @media only screen and (min-width: 10px) {
     .title__offset--xs {
       margin-left: 6%; } }
