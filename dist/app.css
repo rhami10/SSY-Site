@@ -112,10 +112,10 @@ select {
 
 :root {
   --color-text0: #FFF;
-  --color-text1: #AAE5EE;
+  --color-text1: #CCEFF5;
   --color-text2: #FCE3D9;
   --color-text3: #FAE9C6;
-  --color-text4: #C4BCDC;
+  --color-text4: #CFCAE3;
   --color-text: var(--color-text0);
   --color-bg: rgba(0, 0, 0, 0);
   --color-link: var(--color-text);
@@ -335,9 +335,11 @@ body {
     font-size: calc(1.4rem + 1.5vw); }
     @media only screen and (min-width: 10px) {
       .title--medium {
-        font-size: calc(3.05rem); } }
+        font-size: calc(2.9rem); } }
   .title--large {
     font-size: calc(10rem + 3vw); }
+  .title--mobile {
+    font-size: calc(1.4rem + 1.3vw); }
 
 .title__offset {
   display: block;
@@ -494,10 +496,11 @@ body {
 .tile__title {
   margin-left: -10%;
   line-height: 1.2;
-  white-space: nowrap; }
-  @media only screen and (min-width: 10px) {
-    .tile__title {
-      margin-left: -40%; } }
+  white-space: nowrap;
+  margin-left: -40%; }
+  .tile__title--mobile {
+    line-height: 1.4;
+    margin-left: -26%; }
 
 .tile__cta {
   font-family: 'Roboto Mono', monospace;
@@ -511,4 +514,8 @@ body {
       margin-left: -11%;
       margin-bottom: 1.5rem;
       font-size: calc(1rem + 1.5vw); } }
+  .tile__cta--mobile {
+    margin-left: 7%;
+    margin-bottom: 2rem;
+    font-size: calc(0.9rem + 1.5vw); }
 

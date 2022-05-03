@@ -56,9 +56,13 @@
 
     white-space: nowrap;
 
-    @include minw($bp-mobile) {
-        margin-left: -40%;
+    margin-left: -40%;
+
+    &--mobile {
+        line-height: 1.4;
+        margin-left: -26%;
     }
+
 }
 
 .tile__cta {
@@ -75,5 +79,11 @@
         margin-left: -11%;
         margin-bottom: 1.5rem;
         font-size: calc(1rem + 1.5vw);
+    }
+
+    &--mobile {
+        margin-left: 7%;
+        margin-bottom: 2rem;
+        font-size: calc(0.9rem + 1.5vw);
     }
 }

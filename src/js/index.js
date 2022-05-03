@@ -40,6 +40,7 @@ const initApp = () => {
     const urlParams = new URLSearchParams(queryString);
     const camp_type = urlParams.get('camp');
     const shader_type = urlParams.get('shader');
+    const isMobile = urlParams.get('mobile');
 
     let camp_det_index = camp_det.findIndex((el) => el.name == camp_type)
     let campSelected = camp_det[camp_det_index];
@@ -53,7 +54,8 @@ const initApp = () => {
     
 
         /* Setting up title text. */
-        let title = document.querySelector(".tile__title")
+        let title = document.querySelector(".tile__title");
+        let titleCTA = document.querySelector(".tile__cta");
         title.innerHTML = campSelected.title;
 
         if(camp_det_index != 3)
@@ -67,7 +69,6 @@ const initApp = () => {
                 ' <span class="title__offset title__offset--s">' + campSelected.title_3 + '</span>'
         }
 
-
         /* Setting up caption text. */
         document.querySelector(".tile__cta__text").innerHTML = campSelected.detail[0];
         
@@ -77,6 +78,22 @@ const initApp = () => {
         /* Setting text colours. */
         document.documentElement.style.setProperty('--color-text', `var(--color-text${camp_det_index+1})`);
 
+
+         /* For mobile variant */
+        // Add to .tile__title, classes .title--mobile, .tile__title--mobile
+        // Remove from .tile__title, class .title--medium
+        // Add to .tile__cta, class .tile__cta--mobile
+        if(isMobile == "true") {
+
+            console.log("isMobile");
+
+            title.classList.add("title--mobile", "tile__title--mobile")
+            title.classList.remove("title--medium");
+
+            titleCTA.classList.add("tile__cta--mobile");
+        }
+
+
         window.APP = APP
         APP.Stage = new Stage(shader_type, campSelected.link)
     }
@@ -84,8 +101,6 @@ const initApp = () => {
 
 if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
     initApp()
-    console.log("JS File Fired. IF statement.")
 } else {
     document.addEventListener('DOMContentLoaded', initApp)
-    console.log("JS File Fired. Else statement.")
 }

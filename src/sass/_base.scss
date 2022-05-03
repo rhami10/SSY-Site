@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-// Text 1 - #F7F7FF, #D7DAE5, #FFE9D0
-// Text 2 - 
-// Text 3 - 
-// Text 4 - 
-
 :root {
     --color-text0: #FFF;
-    --color-text1: #AAE5EE;
+    --color-text1: #CCEFF5;
     --color-text2: #FCE3D9;
     --color-text3: #FAE9C6;
-    --color-text4: #C4BCDC;
+    --color-text4: #CFCAE3;
     --color-text: var(--color-text0);
     --color-bg: rgba(0, 0, 0, 0);
     --color-link: var(--color-text);

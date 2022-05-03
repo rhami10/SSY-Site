@@ -10,12 +10,16 @@
         font-size: calc(1.4rem + 1.5vw);
 
         @include minw($bp-mobile) {
-            font-size: calc(3.05rem);
+            font-size: calc(2.9rem);
         }
     }
 
     &--large {
         font-size: calc(10rem + 3vw);
+    }
+
+    &--mobile {
+        font-size: calc(1.4rem + 1.3vw);
     }
 }
 
