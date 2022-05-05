@@ -57,7 +57,7 @@ export default class Tile {
         this.$els.link.addEventListener('mouseenter', () => { this.onPointerEnter() })
         this.$els.link.addEventListener('mouseleave', () => { this.onPointerLeave() })
         this.$els.link.addEventListener('click', (e) => { this.onClick(e) })
-
+        this.$els.link.addEventListener('auxclick', (e) => { this.onClick(e) })
     }
 
     /* Handlers
