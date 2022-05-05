@@ -1,6 +1,5 @@
 import * as THREE from 'three'
 import { TweenMax as TM, Power2, Power3, Expo } from 'gsap/all'
-import Scrollbar from 'smooth-scrollbar'
 import vertexShader from '../glsl/vertexShader.glsl'
 import { SplitText as ST } from './vendors/gsap/SplitText'
 
@@ -42,8 +41,6 @@ export default class Tile {
 
         this.loader = new THREE.TextureLoader()
         this.preload([this.mainImage.src, this.mainImage.dataset.hover], () => { this.initTile() })
-
-        this.Scroll = Scrollbar.get(document.querySelector('.scrollarea'))
 
         this.bindEvent()
     }
