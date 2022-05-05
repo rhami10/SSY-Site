@@ -352,7 +352,7 @@ body {
       margin-left: 9%; } }
   @media only screen and (min-width: 10px) {
     .title__offset--xs {
-      margin-left: 6%; } }
+      margin-left: 4.5%; } }
 
 @keyframes rotate {
   to {
